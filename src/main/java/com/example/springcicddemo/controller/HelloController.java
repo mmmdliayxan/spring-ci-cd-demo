@@ -10,6 +10,7 @@ public class HelloController {
     @GetMapping
     public String sayHello(@RequestParam(defaultValue = "Ayxan") String name) {
         System.out.println("Hello");
+        System.out.println("Hello world");
         return "Hi, " + name + "!";
     }
 }
