@@ -31,5 +31,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle
 
+      - name: Gradle faylına icra icazəsi ver
+        run: chmod +x ./gradlew
+
       - name: Gradle ilə build/test et
         run: ./gradlew build
