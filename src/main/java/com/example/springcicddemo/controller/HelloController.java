@@ -11,6 +11,7 @@ public class HelloController {
     public String sayHello(@RequestParam(defaultValue = "Ayxan") String name) {
         System.out.println("Hello");
         System.out.println("Hello world");
-        return "Hi, " + name + "!";
+        String value = "How are you";
+        return "Hi, " + name + "! "+value;
     }
 }
